@@ -1,0 +1,36 @@
+<div id="name">
+
+  <form (ngSubmit)="cal()">
+    <div>
+      <label style="font-weight: 800;">Boy  Name</label>
+      <input type="text" class="form-control" name="bname" [(ngModel)]="bname">
+  </div>
+
+  <div >
+    <label style="font-weight: 800;">Girl  Name</label>
+    <input type="text" class="form-control" name="gname" [(ngModel)]="gname">
+</div>
+
+
+<div class="col text-center" style="margin-top: 50px; margin-bottom: 150px;">
+  <button type="submit" class="btn btn-primary">Submit</button>
+</div>
+
+  </form>
+
+
+
+</div>
+
+<div id="result" style="display:none ">
+  <div>
+    Boy Name:{{this.bname}}<br>
+    Girl Name:{{this.gname}}<br>
+Result:{{this.str}}
+  </div>
+  
+
+</div>
+
+
+   
