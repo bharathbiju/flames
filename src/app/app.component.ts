@@ -27,6 +27,8 @@ export class AppComponent {
     this.tbname=this.bname.split(" ").join("").toLowerCase()
     this.tgname=this.gname.split(" ").join("").toLowerCase()
     console.log("after",this.bname,this.gname)
+
+  
     this.total=this.tbname.length+this.tgname.length
     for ( var i = 0; i < this.tbname.length; i++) {
       for (var j = 0; j < this.tgname.length; j++) {
@@ -47,9 +49,12 @@ export class AppComponent {
 this.flame(this.total)
 
   }
+ 
   flame(total: number) {
     this.str="flames";
     this.temp=this.total
+
+   if(this.total!=1){
     while(this.str.length>1){
       if(this.total>this.str.length && (this.temp>1)){
         this.temp=this.total%this.str.length
@@ -61,14 +66,18 @@ this.flame(this.total)
 
       }
      
-
+ 
     this.str = this.str.substring(this.temp, this.str.length)+ this.str.substring(0,this.temp- 1) ;
     console.log(this.str)
 
     }
     
-    document.getElementById("result").style.display = "block";
-    
+  
+   }else{
+     this.str='s'
+   }
+   
+   document.getElementById("result").style.display = "block";
 
     // this.flameset(this.str)
     
