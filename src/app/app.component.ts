@@ -51,7 +51,7 @@ this.flame(this.total)
   }
  
   flame(total: number) {
-    this.str="flames";
+    this.str="FLAMES";
     this.temp=this.total
 
    if(this.total!=1){
