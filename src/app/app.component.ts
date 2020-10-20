@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'flames';
+  title = 'Flames';
   bname:String;
   gname:String;
   cancel=0;
@@ -74,7 +74,7 @@ this.flame(this.total)
     
   
    }else{
-     this.str='s'
+     this.str='S'
    }
    
    document.getElementById("result").style.display = "block";
